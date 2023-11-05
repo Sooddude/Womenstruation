@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: rgb(252, 217, 217); /* Pastel Pink Background */
+            text-align: center;
+        }
+
+        .login-container {
+            background-color: #fff; /* White background color for the container */
+            border-radius: 10px; /* Rounded corners for the container */
+            padding: 40px; /* Add some padding inside the container */
+            width: 300px; /* Adjust the width as needed */
+            border: 2px solid #ff007f; /* Light Pink Border */
+            margin: 0 auto; /* Center the container horizontally */
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff007f; /* Pink Title Color */
+            font-family: "Lucida Handwriting", cursive;
+            font-size: 65px;
+        }
+
+        h2 {
+            color: #888888; /* Light Pink Subtitle Color */
+            font-family: "Times", cursive;
+            font-size: 35px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        select {
+            width: 75%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid #ff007f; /* Light Pink Border */
+            border-radius: 5px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #ff007f; /* Pink Button Background */
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Womenstruation</h1>
+    <h2>Login</h2>
+    <div class="login-container">
+        <form action="process_login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <p style = "font-size: 11px">Forgot Password?</p>
+        </form>
+        <div class="button-container">
+            <button id="loginbutton">Login</button>
+        </div>
+    </div>
+    <p></p>
+    <p>Or sign up if you don't have an account with us</p>
+    <div class="button-container">
+        <button id="createaccbutton">Sign Up</button>
+    </div>
+</body>
+</html>
